@@ -1,4 +1,6 @@
-# EMG-based Gait Analysis Dataset
+# EMG Gait Analysis (UMAP + DBSCAN)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 ## 개요
 
@@ -6,16 +8,18 @@
 8명의 피험자에 대해 3가지 조건(일반 보행, 슈트 착용 모터 오프, 슈트 착용 모터 온)에서 
 수집된 EMG 데이터를 UMAP 임베딩과 DBSCAN 클러스터링으로 분석합니다.
 
-## 데이터 가용성
+## Quickstart — 데이터 다운로드 및 테스트
 
-**원시 데이터는 DOI가 발급된 저장소에서 제공됩니다:**
+```bash
+# 의존성 설치
+pip install -r requirements.txt
 
-- **Zenodo**: [DOI 링크 추가 예정]
-- **데이터셋 크기**: 약 6.5GB (24개 CSV 파일, 8명 × 3조건)
-- **샘플링 주파수**: 2148 Hz
-- **EMG 채널 수**: 16채널
+# (선택) 데이터 폴더 준비
+mkdir -p data
 
-원시 데이터를 다운로드한 후 `data/` 디렉토리에 배치하세요.
+# 데이터 파일을 ./data/ 아래에 배치한 뒤 파이프라인 실행
+python src/run_pipeline.py --config configs/default.yaml
+```
 
 ## 설치
 
@@ -42,6 +46,10 @@ data/
 │   └── 241211_1_walking_suit_motor_on.csv
 └── ...
 ```
+
+**원시 데이터는 Zenodo에서 다운로드하세요:**
+- Zenodo DOI: [DOI 링크 추가 예정]
+- 데이터셋 크기: 약 6.5GB (24개 CSV 파일, 8명 × 3조건)
 
 ### 2. 설정 파일 수정 (선택사항)
 
@@ -88,6 +96,12 @@ python src/run_pipeline.py --config configs/default.yaml
 2. **suit_motor_off**: 보행 보조 슈트 착용, 모터 작동 안 함
 3. **suit_motor_on**: 보행 보조 슈트 착용, 모터 작동 중
 
+### 데이터 형식
+
+- **샘플링 주파수**: 2148 Hz
+- **EMG 채널 수**: 16채널
+- **파일 형식**: CSV
+
 ## 분석 방법론
 
 본 파이프라인은 다음 단계로 구성됩니다:
@@ -98,15 +112,42 @@ python src/run_pipeline.py --config configs/default.yaml
 4. **DBSCAN 클러스터링**: 밀도 기반 클러스터링으로 패턴 식별
 5. **평가 지표**: Silhouette score, Trustworthiness, Noise fraction 계산
 
-## 인용 방법
+## 인용 방법 (How to cite)
 
-이 코드나 데이터셋을 사용하실 경우 다음 형식으로 인용해주세요:
+### Dataset
+EMG gait analysis dataset. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
 
+### Code
+taniasongbi/taniasongbi (GitHub). https://github.com/taniasongbi/taniasongbi
+
+### BibTeX (dataset)
+```bibtex
+@dataset{emg_gait_dataset,
+  title   = {EMG Gait Analysis Dataset},
+  doi     = {10.5281/zenodo.XXXXXXX},
+  url     = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  publisher = {Zenodo},
+  year    = {2025},
+}
 ```
-[Author(s)] ([Year]). EMG-based Gait Analysis Dataset. 
-GitHub Repository: https://github.com/taniasongbi/taniasongbi
-Data Repository: [Zenodo DOI 링크]
+
+### BibTeX (software)
+```bibtex
+@software{emg_pipeline_software,
+  title   = {EMG Gait Analysis Pipeline (UMAP–DBSCAN)},
+  url     = {https://github.com/taniasongbi/taniasongbi},
+  note    = {Version: v0.1.0 or later; see releases},
+  year    = {2025}
+}
 ```
+
+## Data Availability
+
+Data availability: The EMG gait analysis dataset is available at Zenodo: https://doi.org/10.5281/zenodo.XXXXXXX
+
+Code repository: https://github.com/taniasongbi/taniasongbi
+
+> **참고**: 배지 코드는 Zenodo 레코드 페이지의 **"Markdown"** 블록에서 그대로 복사하면 됩니다. 위 예시는 자리표시자입니다.
 
 ## 라이선스
 
@@ -119,4 +160,3 @@ Data Repository: [Zenodo DOI 링크]
 ## 참고 문헌
 
 관련 논문이 출판되면 여기에 링크를 추가하겠습니다.
-

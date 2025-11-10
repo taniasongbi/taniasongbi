@@ -1,0 +1,28 @@
+{
+  "title": "EMG Gait Analysis Dataset",
+  "upload_type": "dataset",
+  "description": "Raw/processed EMG for gait analysis with UMAP–DBSCAN pipeline. See README for variables and preprocessing.",
+  "creators": [
+    {
+      "name": "YourSurname, YourGivenName",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "keywords": [
+    "EMG",
+    "gait",
+    "biosignal",
+    "UMAP",
+    "DBSCAN"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/taniasongbi/taniasongbi",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
+
