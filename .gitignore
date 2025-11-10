@@ -1,0 +1,33 @@
+# 데이터는 외부 저장소/DOI에 올리고 여기선 제외 권장
+data/
+results/
+
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.log
+*.bak
+*~
+
