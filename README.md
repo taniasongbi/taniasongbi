@@ -132,10 +132,10 @@ taniasongbi/taniasongbi (GitHub). https://github.com/taniasongbi/taniasongbi
 ### BibTeX (software)
 ```bibtex
 @software{emg_pipeline_software,
-  title   = {EMG Gait Analysis Pipeline (UMAP–DBSCAN)},
-  url     = {https://github.com/taniasongbi/taniasongbi},
-  note    = {Version: v0.1.0 or later; see releases},
-  year    = {2025}
+  title = {EMG Gait Analysis Pipeline (UMAP–DBSCAN)},
+  url   = {https://github.com/taniasongbi/taniasongbi},
+  note  = {Version: v0.1.0 or later; see releases},
+  year  = {2025}
 }
 ```
 
