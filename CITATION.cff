@@ -8,9 +8,8 @@ authors:
   - family-names: YourSurname
     given-names: YourGivenName
     orcid: "https://orcid.org/0000-0000-0000-0000"
-date-released: "2025-01-27"
+date-released: "2025-11-10"
 preferred-citation:
   type: dataset
   title: "EMG Gait Analysis Dataset"
-  doi: "10.5281/zenodo.XXXXXXX"
-
+  doi: "10.5281/zenodo.XXXXXXX"   # 릴리스 후 버전 DOI로 교체
