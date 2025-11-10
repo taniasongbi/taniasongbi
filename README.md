@@ -8,16 +8,14 @@
 8명의 피험자에 대해 3가지 조건(일반 보행, 슈트 착용 모터 오프, 슈트 착용 모터 온)에서 
 수집된 EMG 데이터를 UMAP 임베딩과 DBSCAN 클러스터링으로 분석합니다.
 
-## Quickstart — 데이터 다운로드 및 테스트
+## Quickstart
 
 ```bash
-# 의존성 설치
 pip install -r requirements.txt
 
-# (선택) 데이터 폴더 준비
 mkdir -p data
 
-# 데이터 파일을 ./data/ 아래에 배치한 뒤 파이프라인 실행
+# 데이터 파일을 ./data/ 아래에 배치
 python src/run_pipeline.py --config configs/default.yaml
 ```
 
@@ -127,7 +125,7 @@ taniasongbi/taniasongbi (GitHub). https://github.com/taniasongbi/taniasongbi
   doi     = {10.5281/zenodo.XXXXXXX},
   url     = {https://doi.org/10.5281/zenodo.XXXXXXX},
   publisher = {Zenodo},
-  year    = {2025},
+  year    = {2025}
 }
 ```
 
