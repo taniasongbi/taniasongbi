@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.log
+*.bak
+
+# 데이터 백업 (원본은 Git LFS로 관리)
+# data/raw/*.csv는 Git LFS로 관리되므로 여기서 제외하지 않음
+

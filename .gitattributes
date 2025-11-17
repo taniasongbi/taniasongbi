@@ -1,0 +1,8 @@
+# Git LFS 설정 - 큰 CSV 파일은 LFS로 관리
+*.csv filter=lfs diff=lfs merge=lfs -text
+# 메타데이터 파일은 일반 Git으로 관리
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf !filter !diff !merge
+# 스크립트 파일
+*.py text eol=lf
