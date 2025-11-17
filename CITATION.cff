@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the dataset DOI and this repository."
+title: "EMG Gait Analysis Pipeline (UMAP–DBSCAN)"
+version: "v0.1.0"
+repository-code: "https://github.com/taniasongbi/taniasongbi"
+type: software
+authors:
+  - family-names: YourSurname
+    given-names: YourGivenName
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+date-released: "2025-11-10"
+preferred-citation:
+  type: dataset
+  title: "EMG Gait Analysis Dataset"
+  doi: "10.5281/zenodo.XXXXXXX"   # 릴리스 후 버전 DOI로 교체

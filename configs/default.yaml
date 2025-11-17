@@ -1,0 +1,19 @@
+data_dir: "data"           # 8명 원시/특징 파일을 넣는 로컬 폴더 경로
+file_extensions: [".csv", ".tsv"]   # 필요시 ".mat" 추가
+mat_variable: null         # .mat일 때 데이터 행렬 변수명(e.g., "X"); 없으면 null
+target_columns: null       # null이면 수치 컬럼 전부 사용; ["f1","f2",...]로 지정 가능
+
+umap:
+  n_neighbors: 30
+  min_dist: 0.1
+  n_components: 2
+  metric: "euclidean"
+  random_state: 42
+
+dbscan:
+  eps: 0.5
+  min_samples: 4           # 보통 2~4×임베딩 차원
+
+metrics:
+  trustworthiness_k: 10
+

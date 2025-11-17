@@ -1,4 +1,9 @@
+# 데이터는 Git LFS로 관리 (data/raw/*.csv는 Git LFS로 추적됨)
+# results 디렉토리는 분석 결과이므로 제외
+results/
+
 # Python
+*.pyc
 __pycache__/
 *.py[cod]
 *$py.class
@@ -24,7 +29,4 @@ Thumbs.db
 *.tmp
 *.log
 *.bak
-
-# 데이터 백업 (원본은 Git LFS로 관리)
-# data/raw/*.csv는 Git LFS로 관리되므로 여기서 제외하지 않음
-
+*~
